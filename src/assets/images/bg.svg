@@ -1,0 +1,35 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+	<title>New Project</title>
+	<defs>
+		<image  width="1920" height="1080" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4AQMAAADSHVMAAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAETSURBVHic7cEBDQAAAMKg909tDwcUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADApwH45QABmSWJDwAAAABJRU5ErkJggg=="/>
+		<linearGradient id="g1" x1="-17" y1="540" x2="1937" y2="540" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#c6e3ff"/>
+		</linearGradient>
+		<linearGradient id="g2" x1="128.1" y1="-98.5" x2="858" y2="-98.5" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#000000"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="-19" dy="0" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".4"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f2" ><feDropShadow dx="-19" dy="0" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".4"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f3" ><feDropShadow dx="-6" dy="0" stdDeviation="6.666666666666667" flood-color="#000000" flood-opacity=".4"/></filter>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: #b7ddff } 
+		.s3 { filter: url(#f1);fill: #b7ddff } 
+		.s4 { opacity: .2;fill-opacity: .3;mix-blend-mode: multiply;filter: url(#f2);fill: #b7ddff } 
+		.s5 { filter: url(#f3);fill: #b7ddff } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<path id="&lt;Path&gt;" class="s0" d="m-17-16h1954v1112h-1954z"/>
+	<path id="Shape 5" class="s1" d="m164-10.2c-28-5.4-47.5-52.1-28-66 198-141 721.8-113.7 722-95.8"/>
+	<path id="Shape 1 copy" class="s2" d="m34 104c162.2 1.1 330 45.1 328 150-1.3 69.1-69.7 142.3-168 168-105 27.4-192.9 8.8-242-76-41.3-71.3-35-138.4 24-212 18.1-22.5 28.6-30.2 58-30z"/>
+	<path id="Shape 1" class="s3" d="m45.4 122c142.7 0.9 290.4 39.7 288.6 132-1.2 60.8-61.3 125.2-147.8 147.8-92.4 24.1-169.8 7.7-212.9-66.9-36.3-62.7-30.8-121.7 21.1-186.5 15.9-19.8 25.2-26.6 51-26.4z"/>
+	<path id="Shape 2" class="s2" d="m1572.4 14.3c144-60.6 208.8-76.2 336.4 7.9 51.3 33.9 60.6 50.7 80.2 112.1 59.7 187.1 15.1 224.4-50.3 419-74.4 221.5-81.1 334.2-249.5 405.9-212.6 90.6-479.4-18.8-555.7-211.2-73.6-185.6 61-307.1 231.3-534.3 85.1-113.4 85.6-148.1 207.6-199.4z"/>
+	<path id="Shape 2 copy" class="s4" d="m1572.1 72.5c127.8-53.1 185.3-66.8 298.4 6.7 45.5 29.6 53.7 44.3 71 98.1 52.8 163.8 13.2 196.5-45 367.1-66.1 194-72.2 292.7-221.6 355.7-188.6 79.5-425.1-16.1-492.6-184.5-65.2-162.6 54.3-269 205.6-468.2 75.5-99.4 76-129.8 184.2-174.9z"/>
+	<path id="Shape 4" class="s2" d="m2016 714"/>
+	<path id="Shape 3 copy" class="s2" d="m244 1062c-40.4-166.6 48.6-349.9 178-364 95.8-10.5 152.6 64 240 180 64.4 85.5 103.1 104.7 90 202-8.8 65.9-24.5 91.5-78 127.8-115.9 78.7-196.6 59.8-324-17.8-65.2-39.7-89.4-59.7-106-128z"/>
+	<path id="Shape 3" class="s5" d="m284.1 1052.6c-33.4-137.7 40.1-289.1 147.1-300.8 79.2-8.7 126.1 52.8 198.3 148.7 53.2 70.7 85.2 86.6 74.4 167-7.3 54.4-20.2 75.6-64.5 105.6-95.8 65.1-162.4 49.4-267.7-14.7-53.9-32.8-73.9-49.3-87.6-105.8z"/>
+</svg>

@@ -1,0 +1,121 @@
+.salutation-div {
+    color: #800080;
+}
+
+.profile-outer-card {
+    padding: 10px;
+    border: none;
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.profile-photo {
+    background-image: url('../../../assets/images/user.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.profile-name {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(to right, #30CFD0 0%, #9944ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+}
+
+.profile-details-card {
+    padding: 10px;
+    border: none;
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    background-color: #ffffff;
+}
+
+.userinfo-item label {
+    font-size: 12px;
+    color: #939393;
+}
+
+div.userinfo-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.badge-count {
+    font-size: 24px;
+    font-weight: 700;
+    align-self: center;
+    font: "Oswald", sans-serif;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+    background: url('../../../assets/images/animated-text-fill.png') repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 50s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .profile-outer-card {
+        min-height: 150px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+
+    .profile-outer-card {
+        min-height: 150px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .userinfo-item {
+        text-align: center;
+    }
+
+    .userinfo-value.d-flex {
+        justify-content: center;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

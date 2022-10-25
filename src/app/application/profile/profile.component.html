@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-12 p-3 pt-0 salutation-div">User Profile</div>
+    <div class="col-sm-12">
+        <div class="card profile-outer-card">
+            <div class="profile-photo"></div>
+            <div class="profile-name">{{userinfo.username}}</div>
+        </div>
+
+        <div class="card profile-details-card mt-3">
+            <div class="row">
+                <div class="userinfo-item col-md-4">
+                    <label>Email</label>
+                    <div class="userinfo-value">{{userinfo.email}}</div>
+                </div>
+                <div class="userinfo-item col-md-4">
+                    <label>Member Since</label>
+                    <div class="userinfo-value">{{userinfo.registeredOn | date}}</div>
+                </div>
+                <div class="userinfo-item col-md-4">
+                    <label>Badges</label>
+                    <div class="userinfo-value d-flex">
+                        <img src="../../../assets/images/badge.png" width="48px" height="48px" alt="gold_badge">
+                        <div class="badge-count">&nbsp;x {{userinfo.badges.length}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #errorDialog>
+    <h1 matDialogTitle>Error!</h1>
+    <mat-dialog-content>
+        <p>Something went wrong. Please try again later.</p>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-raised-button matDialogClose>Dismiss</button>
+    </mat-dialog-actions>
+</ng-template>

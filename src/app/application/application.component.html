@@ -1,0 +1,28 @@
+<nav class="toolbar">
+    <site-icon class="site-icon"></site-icon>
+    <div class="site-heading d-flex" routerLink="dashboard">
+        <span class="headline">Cyber Wizard</span>
+        <span class="tagline">An initiative for Safe Cyber Space</span>
+    </div>
+</nav>
+<div class="d-flex">
+    <div class="sidebar">
+      <div routerLink="/app/dashboard" routerLinkActive="active"><div class="side-icon dashboard-icon"></div>Home</div><hr/>
+      <div routerLink="/app/profile" routerLinkActive="active"><div class="side-icon profile-icon"></div>Profile</div><hr/>
+      <div (click)="logout()"><div class="side-icon logout-icon"></div>Logout</div>
+    </div>
+    <div class="container-fluid p-3 main-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<ng-template #confirmDialog>
+    <h1 matDialogTitle>Confirm</h1>
+    <mat-dialog-content>
+        <p>Are you sure you want to logout?</p>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-raised-button matDialogClose color="primary" (click)="logoutConfirmed()">Confirm</button>
+        <button mat-raised-button matDialogClose>Cancel</button>
+    </mat-dialog-actions>
+</ng-template>

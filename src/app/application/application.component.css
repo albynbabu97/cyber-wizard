@@ -1,0 +1,309 @@
+.toolbar {
+    display: flex;
+    padding: 0 10px;
+    background-color: #00136c;
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.site-icon {
+    background-image: url('../../assets/icons/cyber-security.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    align-self: center;
+}
+
+.site-heading {
+    padding: 10px 5px;
+    flex-direction: column;
+    align-self: center;
+}
+
+.site-heading .headline {
+    font-size: 22px;
+    font-weight: 500;
+    color: #d5e0ff;
+}
+
+.site-heading .tagline {
+    color: #ebebeb;
+    font-size: 12px;
+}
+
+.sidebar {
+    min-width: 64px;
+    max-width: 64px;
+    background-color: #000000a1;
+    padding: 10px;
+}
+
+.sidebar .side-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 15px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+.sidebar .dashboard-icon {
+    background-image: url('../../assets/images/home-white.png');
+}
+
+.sidebar .profile-icon {
+    background-image: url('../../assets/images/account-white.png');
+}
+
+.sidebar .logout-icon {
+    background-image: url('../../assets/images/exit-white.png');
+}
+
+.sidebar .dashboard-icon:hover, .sidebar .profile-icon:hover, .sidebar .logout-icon:hover  {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    color: #ffffff;
+    /* transform: rotateZ(60deg); */
+    animation: hoverkeyframe 2s forwards;
+    /* animation-direction: alternate; */
+}
+
+@keyframes hoverkeyframe {
+    0% {
+      transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ(-30deg);
+      }
+    50% {
+      transform: rotateZ(30deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+.sidebar {
+    text-align: center;
+    font-size: 12px;
+}
+
+.main-container {
+    top: 70px;
+    position: relative;
+    left: 64px;
+    width: calc(100% - 64px);
+    margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .toolbar {
+        justify-content: center;
+    }
+
+    .container-fluid {
+        margin-bottom: 114px;
+    }
+
+    .sidebar {
+        position: fixed;
+        bottom: 0 !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 3;
+        width: 100%;
+        max-width: 100%;
+        /* padding: 6px 0 0 5px; */
+        color: #000000;
+        max-height: 68px;
+        background-color: #d9d9d9;
+        box-shadow: 0 -3px 5px -1px #0000, 0 -6px 10px #0000000d, 0 -1px 18px #00000012;
+    }
+
+    .sidebar .side-icon {
+        margin: 0 24px;
+    }
+
+    .sidebar div.active {
+        color: #00136c;
+        transform: translateY(-25px);
+        background-color: #d9d9d9;
+        padding: 10px 0 0 0;
+        border-radius: 44px;
+        height: 76px;
+    }
+
+    .sidebar div.active .side-icon {
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    }
+
+    .sidebar .dashboard-icon {
+        background-image: url('../../assets/images/home-blue.png');
+    }
+    
+    .sidebar .profile-icon {
+        background-image: url('../../assets/images/account-blue.png');
+    }
+    
+    .sidebar .logout-icon {
+        background-image: url('../../assets/images/exit-blue.png');
+    }
+
+    hr {
+        display: none;
+    }
+
+    .main-container {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+    .toolbar {
+        justify-content: center;
+    }
+
+    .container-fluid {
+        margin-bottom: 114px;
+    }
+
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 3;
+        width: 100%;
+        max-width: 100%;
+        max-height: 68px;
+        color: #000000;
+        /* padding: 6px 0 0 5px; */
+        background-color: #d9d9d9;
+        box-shadow: 0 -3px 5px -1px #0000, 0 -6px 10px #0000000d, 0 -1px 18px #00000012;
+    }
+
+    .sidebar .side-icon {
+        margin: 0 24px;
+    }
+
+    .sidebar div.active {
+        color: #00136c;
+        transform: translateY(-25px);
+        background-color: #d9d9d9;
+        padding: 10px 0 0 0;
+        border-radius: 44px;
+        height: 76px;
+    }
+
+    .sidebar div.active .side-icon {
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    }
+
+    .sidebar .dashboard-icon {
+        background-image: url('../../assets/images/home-blue.png');
+    }
+    
+    .sidebar .profile-icon {
+        background-image: url('../../assets/images/account-blue.png');
+    }
+    
+    .sidebar .logout-icon {
+        background-image: url('../../assets/images/exit-blue.png');
+    }
+
+    hr {
+        display: none;
+    }
+
+    .main-container {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .toolbar {
+        justify-content: flex-start;
+    }
+
+    .sidebar {
+        text-align: center;
+        font-size: 12px;
+        position: fixed;
+        top: 71px;
+        z-index: 2;
+        height: 100%;
+    }
+
+    .sidebar div.active {
+        background-color: #000000a6;
+        border-radius: 10px;
+        padding: 1px 5px;
+        color: #ffffff;
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .toolbar {
+        justify-content: flex-start;
+    }
+
+    .sidebar {
+        text-align: center;
+        font-size: 12px;
+        position: fixed;
+        top: 71px;
+        z-index: 2;
+        height: 100%;
+    }
+
+    .sidebar div.active {
+        background-color: #000000a6;
+        border-radius: 10px;
+        padding: 1px 5px;
+        color: #ffffff;
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .toolbar {
+        justify-content: flex-start;
+    }
+
+    .sidebar {
+        text-align: center;
+        font-size: 12px;
+        position: fixed;
+        top: 71px;
+        z-index: 2;
+        height: 100%;
+    }
+
+    .sidebar div.active {
+        background-color: #000000a6;
+        border-radius: 10px;
+        padding: 1px 5px;
+        color: #ffffff;
+        box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+    }
+}

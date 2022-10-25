@@ -1,0 +1,21 @@
+{
+    "status": 200,
+    "data": [{
+        "email": "admin@test.com",
+        "username": "admin",
+        "registeredOn": "04/23/2019",
+        "badges": ["beginner", "intermediate", "guru"]
+    },
+    {
+        "email": "albyn@test.com",
+        "username": "albyn babu",
+        "registeredOn": "07/23/2020",
+        "badges": ["","","",""]
+    },
+    {
+        "email": "dany@test.com",
+        "username": "dany joy",
+        "registeredOn": "04/18/2021",
+        "badges": ["","","","", "", ""]
+    }]
+}
